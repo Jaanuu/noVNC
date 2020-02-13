@@ -5,5 +5,7 @@ services:
     build: .
     stdin_open: true
     tty: true
+    ports:
+      - 127.0.0.1:6080:6080
     environment:
       - "VNC_HOST_PORT=${VNC_HOST_PORT}"
