@@ -1,0 +1,9 @@
+version: "3.4"
+services:
+  novnc:
+    container_name: novnc
+    build: .
+    stdin_open: true
+    tty: true
+    environment:
+      - "VNC_HOST_PORT=${VNC_HOST_PORT}"
